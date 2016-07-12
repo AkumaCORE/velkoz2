@@ -34,8 +34,8 @@ namespace SeekerVelKoz
             Drawing.OnDraw += Drawing_OnDraw;
             Game.OnUpdate += Game_OnUpdate;
             Game.OnTick += Game_OnTick;
-            //Game.OnUpdate += SpellManager.QSplit;
-            //GameObject.OnCreate += SpellManager.OnCreate;
+            Game.OnUpdate += SpellManager.QSplit;
+            GameObject.OnCreate += SpellManager.OnCreate;
             Interrupter.OnInterruptableSpell += ModeManager.InterruptMode;
             Gapcloser.OnGapcloser += ModeManager.GapCloserMode;
         }
