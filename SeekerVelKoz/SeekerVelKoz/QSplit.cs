@@ -44,6 +44,7 @@ namespace SeekerVelKoz
                 Direction = (missile.EndPosition.To2D() - missile.StartPosition.To2D()).Normalized();
                 Perpendiculars.Add(Direction.Perpendicular());
                 Perpendiculars.Add(Direction.Perpendicular2());
+                Chat.Print("yes");
             }
         }
 
