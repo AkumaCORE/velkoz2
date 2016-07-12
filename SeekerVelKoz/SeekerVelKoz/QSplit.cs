@@ -37,6 +37,7 @@ namespace SeekerVelKoz
         {
             // Check if the sender is a MissleClient
             var missile = sender as MissileClient;
+            Chat.Print("yes");
             if (missile != null && missile.SpellCaster.IsMe && missile.SData.Name == "VelkozQMissile")
             {
                 // Apply the needed values
